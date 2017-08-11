@@ -31,15 +31,15 @@ uploadArchives {
         }
     }
 }
-def siteUrl = 'https://github.com/BryanSharp/hibeaver'    // project homepage
-def gitUrl = 'https://github.com/BryanSharp/hibeaver.git' // project git
+def siteUrl = 'https://github.com/bdc-android/bdc-gradle-plugin'    // project homepage
+def gitUrl = 'https://github.com/bdc-android/bdc-gradle-plugin.git' // project git
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
         pom {
             project {
                 packaging 'jar'
-                name 'HiBeaver'
+                name 'bdc-gradle-plugin'
                 url siteUrl
                 licenses {
                     license {
@@ -49,9 +49,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'BryanSharp'
-                        name 'BryanSharp'
-                        email 'bsp0911932@163.com'
+                        id 'bdc-android'
+                        name 'bdc-android'
+                        email 'biwei.chen@bqjr.cn'
                     }
                 }
                 scm {
@@ -85,7 +85,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "HiBeaver"
+        name = "bdc-gradle-plugin"
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
